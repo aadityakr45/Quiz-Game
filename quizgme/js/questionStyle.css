@@ -1,0 +1,234 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #daffe0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 400px;
+    height: 80px;
+    margin-bottom: 50px;
+    background-color: rgb(0, 132, 88);
+}
+
+nav h1{
+    margin-left: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5em;
+}
+
+nav button{
+    margin-right: 30px;
+    border: none;
+    padding: 5px;
+    width: 70px;
+    height: 30px;
+    border-radius: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color:rgb(255, 196, 255);
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.container{
+    margin: 0px auto;
+    /* border: 3px solid black; */
+    border-radius: 20px;
+    height: 100%;
+    width: 50%;
+    min-width: 300px;
+    background: rgb(193, 193, 255);
+}
+
+.container form{
+    padding: 20px;
+    height: 100%;
+}
+
+.container form .question{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container form label{
+    font-size: 1.2em;
+}
+
+
+.question .wrong{
+    padding: 5px 0px;
+    color: rgb(255, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 0px 10px;
+    font-weight: bold;
+}
+
+.question .correct{
+    padding: 5px 0px;
+    color:rgb(37, 173, 37);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 0px 10px;
+    font-weight: bold;
+}
+
+.question .selectAnswer{
+    padding: 5px 0px;
+    color:rgb(0, 38, 255);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 0px 10px;
+    font-weight: bold;
+}
+
+.buttonEl{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.buttonEl h4{
+    background-color: rgba(128, 128, 128, 0.38);
+    margin: 10px 20px;
+    width: 20%;
+    height: auto;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    cursor: not-allowed;
+    /* animation: changeColor 1s infinite alternate; */
+}
+
+.buttonChangeEl h4{
+    background-color: rgba(128, 128, 128, 0.38);
+    margin: 10px 20px;
+    width: 20%;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    animation: changeColor 1.5s infinite alternate;
+    cursor: not-allowed;
+}
+
+
+@keyframes changeColor {
+    0%{
+        background-color: rgb(182, 255, 109);
+        box-shadow: 0.5px 0.5px 5px 5px rgb(182, 255, 109);
+        font-size: 13px;
+    }
+    25%{
+        background-color: rgb(255, 128, 153);
+        box-shadow: 0.5px 0.5px 5px 2px rgb(255, 128, 153);
+        font-size: 13px;
+    }
+    50%{
+        background-color: rgb(151, 151, 255);
+        box-shadow: 0.5px 0.5px 5px 5px rgb(151, 151, 255);
+        font-size: 13px;
+    }
+    75%{
+        background-color: rgb(255, 230, 88);
+        box-shadow: 0.5px 0.5px 5px 2px rgb(255, 230, 88);
+        font-size: 13px;
+    }
+    100%{
+        background-color: rgb(255, 85, 238);
+        box-shadow: 0.5px 0.5px 5px 5px rgb(255, 85, 238);
+        font-size: 13px;
+    }
+}
+
+
+#submit-btn{
+    margin: 10px 20px;
+    padding: 0px 10px;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(40, 127, 59);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#submit-btn:hover{
+    background-color: rgb(37, 170, 66);
+    color: white;
+    font-size: 16px;
+}
+
+#reset-btn{
+    margin: 10px 20px;
+    padding: 0px 10px;
+    width: 30%;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(183, 39, 39);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#reset-btn:hover{
+    background-color: crimson;
+    color: white;
+    font-size: 16px;
+}
+
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+select{
+    background-color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    padding-right: 20px;
+    /* margin-bottom: 30px; */
+}
+
+.question select:hover{
+    box-shadow: -0.5px -0.5px 2px 1px rgba(0, 0, 0, 0.56);
+}
+
+
+option:checked{
+    background-color: rgb(255, 224, 245);
+    color: brown;
+    font-weight: 500;   
+}
+
